@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 10.times do
   article = Article.new({
-    title: Faker::Games::Pokemon.name,
-    content: Faker::Games::Pokemon.move
+    title: Faker::TvShows::BrooklynNineNine.character,
+    content: Faker::TvShows::BrooklynNineNine.quote
   })
 
   article.save!
